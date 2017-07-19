@@ -20,3 +20,7 @@ Have a theme you want to share?
 - [ ] classify themes by categories
 - [ ] adapted at smart phone
 - [ ] add test and travis-ci
+
+## Credit
+
+[jekyllthemes](https://github.com/mattvh/jekyllthemes)
