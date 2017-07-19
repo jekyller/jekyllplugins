@@ -1,0 +1,21 @@
+name: Jekyll Themes
+url: http://jekylltheme.org
+description: Insert tagline here
+
+permalink: /themes/:title/
+
+gems: [jekyll-paginate]
+
+highlighter: pygments
+paginate: 20
+
+encoding: utf-8
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
