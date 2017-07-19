@@ -1,5 +1,7 @@
 # Jekyll Themes
 
+[![Build Status](https://api.travis-ci.org/jarrekk/jekyll-theme.svg?branch=master)](https://api.travis-ci.org/jarrekk/jekyll-theme)
+
 A directory of the best-looking themes for Jekyll blogs
 
 ## Submitting a Theme
