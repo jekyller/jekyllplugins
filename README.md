@@ -20,6 +20,7 @@ Todo jobs:
 - [ ] search themes
 - [ ] classify themes by categories
 - [ ] adapted at smart phone
+- [ ] add test and travis-ci
 
 ## License
 
