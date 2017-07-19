@@ -1,0 +1,13 @@
+sudo: required
+language: ruby
+rvm: 2.2
+
+script:
+  - echo "jekyll"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
