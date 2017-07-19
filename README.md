@@ -19,6 +19,7 @@ Todo jobs:
 - [ ] theme detail information
 - [ ] search themes
 - [ ] classify themes by categories
+- [ ] adapted at smart phone
 
 ## License
 
