@@ -2,7 +2,6 @@
 
 A directory of the best-looking themes for Jekyll blogs
 
-
 ## Submitting a Theme
 
 Have a theme you want to share?
@@ -12,16 +11,12 @@ Have a theme you want to share?
 * Make a 250x200 thumbnail and drop it in the thumbnails directory. List its filename in the post's markdown file.
 * Test it out, then push your changes up and open a pull request.
 
-Todo jobs:
+## Todo jobs:
 
-- [ ] google analytics
+- [x] google analytics
 - [ ] themes display style
 - [ ] theme detail information
 - [ ] search themes
 - [ ] classify themes by categories
 - [ ] adapted at smart phone
 - [ ] add test and travis-ci
-
-## License
-
-The contents of this repository are licensed under the [GNU Public License.](http://www.gnu.org/licenses/gpl-3.0.html)
