@@ -28,6 +28,15 @@ layout: default
         {% if page.license_link %}
         <a class="btn" href="{{ page.license_link }}"><i class="icon-file"></i> License</a>
         {% endif %}
+        <br/><br/>
+        {% if page.homepage contains 'github' %}
+        {% assign repo = page.homepage | remove_first: "https://" | remove_first: "http://" | | remove_first: "github.com/" | split: '/' %}
+            <iframe src="http://ghbtns.com/github-btn.html?user={{ repo[0] }}&repo={{ repo[1] }}&type=fork&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user={{ repo[0] }}&repo={{ repo[1] }}&type=watch&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <br/><br/>
+        {% endif %}
     </div>
 
 
