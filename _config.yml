@@ -11,11 +11,10 @@ paginate: 20
 
 encoding: utf-8
 
-# other settings
 highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor', '.idea', '.travis.yml', '.travis']
