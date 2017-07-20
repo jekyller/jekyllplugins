@@ -1,11 +1,11 @@
 <div class="row-fluid">
-    <div class="span12">
+    <div class="span7 pull-left">
         <div class="pagination">
             <ul>
                 {% if paginator.page == 1 %}
-                    <li><span class="active">1</span></li>
+                <li><span class="active">1</span></li>
                 {% else %}
-                    <li><a href="/">1</a></li>
+                <li><a href="/">1</a></li>
                 {% endif %}
 
                 {% if paginator.page > 4 %}
@@ -41,26 +41,25 @@
                 {% endif %}
             </ul>
         </div>
-        <select class="form-control" id="page">
-            {% for number in (1..paginator.total_pages) %}
-            {% if paginator.page == number %}
-                <option value="{{ number }}" selected="selected">{{ number }}</option>
-            {% else %}
-                <option value="{{ number }}">{{ number }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-        <button class="btn btn-small btn-success" id="go_btn">GO</button>
+    </div>
+    <div class="input-append span5 pull-right" id="go_to_form" style="margin-top: 20px;">
+        <input class="span4" id="appendedInputButton" type="number" placeholder="Go to page.">
+        <button class="btn btn-success" type="button" id="go_btn">GO</button>
     </div>
 </div>
 <script>
     $('#go_btn').click(function () {
-        var e = document.getElementById("page");
-        var page = e.options[e.selectedIndex].value;
-        if (page === '1') {
-            location.href = '/'
+        var page = $("#appendedInputButton").val();
+        if (page) {
+            if (page === '1') {
+                location.href = '/'
+            } else if (page <= {{ paginator.total_pages }}) {
+                location.href = '/page' + page;
+            } else {
+                $('#go_to_form').addClass('control-group').addClass('error')
+            }
         } else {
-            location.href = '/page' + page;
+            $('#go_to_form').addClass('control-group').addClass('error')
         }
     })
 </script>
