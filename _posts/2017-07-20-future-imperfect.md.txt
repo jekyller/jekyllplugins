@@ -1,3 +1,4 @@
+---
 layout: post
 title: Future Imperfect
 date: 2017-07-20 17:33:00
@@ -8,3 +9,4 @@ author: Viktortiya Kapitonenko
 thumbnail: future-imperfect.png
 license: MIT License
 license_link: https://github.com/vikapitoshka/blog/blob/master/LICENSE.txt
+---
