@@ -13,7 +13,7 @@ Have a theme you want to share?
 * Make a 250x200 thumbnail and drop it in the thumbnails directory. List its filename in the post's markdown file.
 * Test it out, then push your changes up and open a pull request.
 
-## Todo jobs:
+## ToDo jobs:
 
 - [x] google analytics
 - [ ] themes display style
@@ -21,7 +21,7 @@ Have a theme you want to share?
 - [ ] search themes
 - [ ] classify themes by categories
 - [ ] adapted at smart phone
-- [ ] add test and travis-ci
+- [x] add test and travis-ci
 
 ## Credit
 

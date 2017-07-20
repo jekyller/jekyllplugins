@@ -1,0 +1,66 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="pagination">
+            <ul>
+                {% if paginator.page == 1 %}
+                    <li><span class="active">1</span></li>
+                {% else %}
+                    <li><a href="/">1</a></li>
+                {% endif %}
+
+                {% if paginator.page > 4 %}
+                <li class="disabled"><span class="active">...</span></li>
+                {% endif %}
+                {% if paginator.page > 3 %}
+                <li><a href="/page{{ paginator.page | minus: 2 }}">{{ paginator.page | minus: 2 }}</a></li>
+                {% endif %}
+                {% if paginator.page > 2 %}
+                <li><a href="/page{{ paginator.page | minus: 1 }}">{{ paginator.page | minus: 1 }}</a></li>
+                {% endif %}
+                {% if paginator.page > 1 and paginator.page < paginator.total_pages %}
+                <li><span class="active">{{ paginator.page }}</span></li>
+                {% endif %}
+                {% assign show_1 = paginator.total_pages | minus: 1 %}
+                {% if show_1 > paginator.page %}
+                <li><a href="/page{{ paginator.page | plus: 1 }}">{{ paginator.page | plus: 1 }}</a></li>
+                {% endif %}
+                {% assign show_2 = paginator.total_pages | minus: 2 %}
+                {% if show_2 > paginator.page %}
+                <li><a href="/page{{ paginator.page | plus: 2 }}">{{ paginator.page | plus: 2 }}</a></li>
+                {% endif %}
+
+                {% assign show_page = paginator.total_pages | minus: 3 %}
+                {% if show_page > paginator.page %}
+                <li class="disabled"><span class="active">...</span></li>
+                {% endif %}
+
+                {% if paginator.page == paginator.total_pages %}
+                <li><span class="active">{{ paginator.total_pages }}</span></li>
+                {% else %}
+                <li><a href="/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <select class="form-control" id="page">
+            {% for number in (1..paginator.total_pages) %}
+            {% if paginator.page == number %}
+                <option value="{{ number }}" selected="selected">{{ number }}</option>
+            {% else %}
+                <option value="{{ number }}">{{ number }}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+        <button class="btn btn-small btn-success" id="go_btn">GO</button>
+    </div>
+</div>
+<script>
+    $('#go_btn').click(function () {
+        var e = document.getElementById("page");
+        var page = e.options[e.selectedIndex].value;
+        if (page === '1') {
+            location.href = '/'
+        } else {
+            location.href = '/page' + page;
+        }
+    })
+</script>
