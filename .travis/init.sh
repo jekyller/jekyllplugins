@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-apt-get update && apt-get install imagemagick
-
-
+# install imagemagick
+sudo apt-get update && sudo apt-get install imagemagick

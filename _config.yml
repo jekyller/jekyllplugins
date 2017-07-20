@@ -17,4 +17,12 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor', '.idea', '.travis.yml', '.travis']
+exclude:
+  - .travis/*
+  - .travis.yml
+  - .idea/*
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
