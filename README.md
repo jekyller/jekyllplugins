@@ -20,7 +20,7 @@ Have a theme you want to share?
 - [ ] theme detail information
 - [ ] search themes
 - [ ] classify themes by categories
-- [ ] adapted at smart phone
+- [ ] better adapted at smart phone
 - [x] add test and travis-ci
 
 ## Credit
