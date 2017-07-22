@@ -53,7 +53,7 @@
         if (page) {
             if (page === '1') {
                 location.href = '/'
-            } else if (page <= {{ paginator.total_pages }}) {
+            } else if (page <= {{ paginator.total_pages }} && page > 1 && isNaN(page)) {
                 location.href = '/page' + page;
             } else {
                 $('#go_to_form').addClass('control-group').addClass('error')
