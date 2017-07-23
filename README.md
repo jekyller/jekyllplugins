@@ -16,12 +16,14 @@ Have a theme you want to share?
 ## ToDo jobs:
 
 - [x] google analytics
-- [ ] themes display style
-- [ ] theme detail information
-- [ ] search themes
+- [ ] edit UI for theme list display
+- [ ] edit UI for theme detail information
+- [ ] add search theme feature
 - [ ] classify themes by categories
-- [ ] better adapted at smart phone
+- [ ] better adapted for smart phone
 - [x] add test and travis-ci
+- [ ] add disqus comment
+- [ ] add share feature
 
 ## Credit
 
