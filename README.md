@@ -23,8 +23,10 @@ Have a theme you want to share?
 - [ ] better adapted for smart phone
 - [x] add test and travis-ci
 - [ ] add disqus comment
-- [ ] add share feature
+- [x] add share feature
 
 ## Credit
 
-[jekyllthemes](https://github.com/mattvh/jekyllthemes)
+- [jekyllthemes](https://github.com/mattvh/jekyllthemes)
+- [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+

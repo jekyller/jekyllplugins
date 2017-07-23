@@ -1,12 +1,12 @@
 # Jekyll and Ruby specific.
 .sass-cache
 _site/*
-Gemfile.lock
-Gemfile
+# Gemfile.lock
+# Gemfile
 
 # Bundler related.
-.bundle
-vendor/bundle/
+# .bundle
+# vendor/bundle/
 
 # Other.
 *.orig
