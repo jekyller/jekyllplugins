@@ -2,13 +2,13 @@
 layout: post
 title: Popup Tweets
 date: 2017-07-23 11:32:00
-homepage: https://github.com/junlulocky/PopupTweets
-download: https://github.com/junlulocky/PopupTweets/archive/gh-pages.zip
-demo: http://www.junlulocky.com/PopupTweets/
+homepage: https://github.com/jekyller/PopupTweets
+download: https://github.com/jekyller/PopupTweets/archive/gh-pages.zip
+demo: https://jekyller.github.io/PopupTweets/
 author: Jun Lu
 thumbnail: popup-tweets.png
 license: MIT License
-license_link: https://github.com/junlulocky/PopupTweets/blob/gh-pages/LICENSE
+license_link: https://github.com/jekyller/PopupTweets/blob/gh-pages/LICENSE
 ---
 
 
