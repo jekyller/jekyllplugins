@@ -1,6 +1,6 @@
 # Jekyll Themes
 
-[![Build Status](https://api.travis-ci.org/jarrekk/jekyll-theme.svg?branch=master)](https://api.travis-ci.org/jarrekk/jekyll-theme)
+[![Build Status](https://api.travis-ci.org/jekyller/jekyll-theme.svg?branch=master)](https://api.travis-ci.org/jekyller/jekyll-theme)
 
 A directory of the best-looking themes for Jekyll blogs
 
@@ -22,7 +22,7 @@ Have a theme you want to share?
 - [ ] classify themes by categories
 - [ ] better adapted for smart phone
 - [x] add test and travis-ci
-- [ ] add disqus comment
+- [x] add disqus comment
 - [x] add share feature
 
 ## Credit
