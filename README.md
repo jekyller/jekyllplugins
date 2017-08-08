@@ -1,10 +1,12 @@
-# Jekyll Themes
+# Jekyll Plugins
 
-[![Build Status](https://api.travis-ci.org/jekyller/jekyll-theme.svg?branch=master)](https://api.travis-ci.org/jekyller/jekyll-theme)
+This is a directory for Jekyll plugins, if you have a whole Jekyll theme, please submit it to [Jekyllthemes.org](http://jekyllthemes.org/)
 
-A directory of the best-looking themes for Jekyll blogs
+[![Build Status](https://api.travis-ci.org/jekyller/jekyllplugins.svg?branch=master)](https://api.travis-ci.org/jekyller/jekyllplugins)
 
-## Submitting a Theme
+A directory of the super-useful plugins for Jekyll blogs
+
+## Submitting a Plugin
 
 Have a theme you want to share?
 
@@ -16,10 +18,10 @@ Have a theme you want to share?
 ## ToDo jobs:
 
 - [x] google analytics
-- [ ] edit UI for theme list display
-- [ ] edit UI for theme detail information
-- [ ] add search theme feature
-- [ ] classify themes by categories
+- [ ] edit UI for plugin list display
+- [ ] edit UI for plugin detail information
+- [ ] add search plugin feature
+- [ ] classify plugins by categories
 - [ ] better adapted for smart phone
 - [x] add test and travis-ci
 - [x] add disqus comment
@@ -29,4 +31,9 @@ Have a theme you want to share?
 
 - [jekyllthemes](https://github.com/mattvh/jekyllthemes)
 - [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+
+## Author
+
+- [jarrekk](https://github.com/jarrekk)
+- [Locky](https://github.com/junlulocky)
 
