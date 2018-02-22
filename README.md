@@ -1,8 +1,8 @@
 # Jekyll Plugins
 
-This is a directory for Jekyll plugins, if you have a whole Jekyll theme, please submit it to [Jekyllthemes.org](http://jekyllthemes.org/)
+[![Build Status](https://travis-ci.org/jekyller/jekyllplugins.svg?branch=master)](https://travis-ci.org/jekyller/jekyllplugins)
 
-[![Build Status](https://api.travis-ci.org/jekyller/jekyllplugins.svg?branch=master)](https://api.travis-ci.org/jekyller/jekyllplugins)
+This is a directory for Jekyll plugins, if you have a whole Jekyll theme, please submit it to [Jekyllthemes.org](http://jekyllthemes.org/)
 
 A directory of the super-useful plugins for Jekyll blogs
 
