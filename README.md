@@ -36,4 +36,5 @@ Have a theme you want to share?
 
 - [jarrekk](https://github.com/jarrekk)
 - [Locky](https://github.com/junlulocky)
+- [Sylhare](https://github.com/Sylhare)
 
