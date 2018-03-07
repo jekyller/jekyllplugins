@@ -1,6 +1,6 @@
-name: Jekyll Themes
-url: http://jekylltheme.org
-description: Jekyll themes
+name: Jekyll Plugins
+url: https://jekyller.github.io/jekyllplugins
+description: Jekyll Plugins
 
 permalink: /themes/:title/
 
