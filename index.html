@@ -6,8 +6,8 @@ title: Jekyll Themes
 <div class="gallery">
     {% for post in paginator.posts %}
     <div class="item">
-        <a class="item-inner" href="{{ post.url }}">
-            <div class="item-image"><img src="/thumbnails/{{ post.thumbnail }}"></div>
+        <a class="item-inner" href="{{ site.baseurl }}{{ post.url }}">
+            <div class="item-image"><img src="{{ site.baseurl }}/thumbnails/{{ post.thumbnail }}"></div>
             <div class="item-name">{{ post.title }}</div>
         </a>
     </div>

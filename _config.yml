@@ -1,5 +1,6 @@
 name: Jekyll Plugins
 url: https://jekyller.github.io/jekyllplugins
+baseurl: /jekyllplugins
 description: Jekyll Plugins
 
 permalink: /themes/:title/
