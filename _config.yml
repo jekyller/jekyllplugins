@@ -5,7 +5,7 @@ description: Jekyll Plugins
 
 permalink: /themes/:title/
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 highlighter: pygments
 paginate: 20
