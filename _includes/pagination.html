@@ -1,0 +1,65 @@
+<div class="row-fluid">
+    <div class="span7 pull-left">
+        <div class="pagination">
+            <ul>
+                {% if paginator.page == 1 %}
+                <li><span class="active">1</span></li>
+                {% else %}
+                <li><a href="{{ '/' | relative_url }}">1</a></li>
+                {% endif %}
+
+                {% if paginator.page > 4 %}
+                <li class="disabled"><span class="active">...</span></li>
+                {% endif %}
+                {% if paginator.page > 3 %}
+                <li><a href="{{ '/' | relative_url }}/page{{ paginator.page | minus: 2 }}">{{ paginator.page | minus: 2 }}</a></li>
+                {% endif %}
+                {% if paginator.page > 2 %}
+                <li><a href="{{ '/' | relative_url }}/page{{ paginator.page | minus: 1 }}">{{ paginator.page | minus: 1 }}</a></li>
+                {% endif %}
+                {% if paginator.page > 1 and paginator.page < paginator.total_pages %}
+                <li><span class="active">{{ paginator.page }}</span></li>
+                {% endif %}
+                {% assign show_1 = paginator.total_pages | minus: 1 %}
+                {% if show_1 > paginator.page %}
+                <li><a href="{{ '/' | relative_url }}/page{{ paginator.page | plus: 1 }}">{{ paginator.page | plus: 1 }}</a></li>
+                {% endif %}
+                {% assign show_2 = paginator.total_pages | minus: 2 %}
+                {% if show_2 > paginator.page %}
+                <li><a href="{{ '/' | relative_url }}/page{{ paginator.page | plus: 2 }}">{{ paginator.page | plus: 2 }}</a></li>
+                {% endif %}
+
+                {% assign show_page = paginator.total_pages | minus: 3 %}
+                {% if show_page > paginator.page %}
+                <li class="disabled"><span class="active">...</span></li>
+                {% endif %}
+
+                {% if paginator.page == paginator.total_pages %}
+                <li><span class="active">{{ paginator.total_pages }}</span></li>
+                {% else %}
+                <li><a href="{{ '/' | relative_url }}/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="input-append span5 pull-right" id="go_to_form" style="margin-top: 20px;">
+        <input class="span4" id="appendedInputButton" type="number" placeholder="Go to page.">
+        <button class="btn btn-success" type="button" id="go_btn">GO</button>
+    </div>
+</div>
+<script>
+    $('#go_btn').click(function () {
+        var page = $("#appendedInputButton").val();
+        if (page) {
+            if (page === '1') {
+                location.href = '/'
+            } else if (page <= {{ paginator.total_pages }} && page > 1 && isNaN(page)) {
+                location.href = '{{ \'/\' | relative_url }}/page' + page;
+            } else {
+                $('#go_to_form').addClass('control-group').addClass('error')
+            }
+        } else {
+            $('#go_to_form').addClass('control-group').addClass('error')
+        }
+    })
+</script>

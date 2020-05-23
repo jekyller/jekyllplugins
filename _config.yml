@@ -1,0 +1,32 @@
+name: Jekyll Plugins
+url: https://jekyller.github.io/jekyllplugins
+baseurl: /jekyllplugins
+description: Jekyll Plugins
+
+permalink: /themes/:title/
+
+plugins: [jekyll-paginate]
+
+highlighter: pygments
+paginate: 20
+
+encoding: utf-8
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .travis/*
+  - .travis.yml
+  - .idea/*
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE

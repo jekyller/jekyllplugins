@@ -1,0 +1,19 @@
+sudo: required
+language: ruby
+rvm: 2.2
+
+before_script:
+  - bash .travis/init.sh
+
+script:
+  - bash .travis/script.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+
+notifications:
+  email: me@jarrekk.com

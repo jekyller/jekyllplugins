@@ -1,0 +1,25 @@
+---
+layout: default
+title: Jekyll Themes
+---
+
+<div class="gallery">
+    {% for post in paginator.posts %}
+    <div class="item">
+        <a class="item-inner" href="{{ site.baseurl }}{{ post.url }}">
+            <div class="item-image"><img src="{{ site.baseurl }}/thumbnails/{{ post.thumbnail }}"></div>
+            <div class="item-name">{{ post.title }}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Pager -->
+{% include pagination.html %}
+
+
+<div style="display:none;">
+<center>
+<a href="https://clustrmaps.com/site/19p5b" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=N51UNZM9nTB67-6VwGMT6qE5a1H9Gez2TDm35jQlcV4&cl=ffffff"></a>
+</center>
+</div>
